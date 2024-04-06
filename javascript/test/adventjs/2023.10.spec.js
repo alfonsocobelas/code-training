@@ -8,7 +8,7 @@ describe('adventjs/2023.10 unit-test', () => {
             expect( createChristmasTree('123', 4) ).to.eq(result)
         })
                 
-        it.only('case 2', () => {
+        it('case 2', () => {
             const result = '  *\n @ o\n* @ o\n  |'
             expect( createChristmasTree('*@o', 3) ).to.eq(result)
         })
