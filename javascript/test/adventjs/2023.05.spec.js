@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { cyberReindeer } from '../../adventjs/2023.5.solve.js'
 
-describe('adventjs/2023.4 unit-test', () => {
+describe('adventjs/2023.05 unit-test', () => {
     describe('cyberReindeer()', () => {
         it('case 1', () => {
             const road = 'S..|...|..'

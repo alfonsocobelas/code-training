@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { organizeGifts } from '../../adventjs/2023.8.solve.js'
 
-describe('adventjs/2023.8 unit-test', () => {
+describe('adventjs/2023.08 unit-test', () => {
     describe('organizeGifts()', () => {
         it('case 1', () => {
             expect( organizeGifts('76a11b') ).to.eq('[a]{a}{a}(aaaaaa){b}(b)')

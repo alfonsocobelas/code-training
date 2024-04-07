@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { findNaughtyStep } from '../../adventjs/2023.3.solve.js'
 
-describe('adventjs/2023.3 unit-test', () => {
+describe('adventjs/2023.03 unit-test', () => {
     describe('findNaughtyStep()', () => {
         it('case 1', () => {
             expect( findNaughtyStep('abcd', 'abcde') ).to.eq('e')

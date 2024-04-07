@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { manufacture } from '../../adventjs/2023.2.solve.js'
 
-describe('adventjs/2023.2 unit-test', () => {
+describe('adventjs/2023.02 unit-test', () => {
     describe('manufacture()', () => {
         it('case 1', () => {
             expect( manufacture(['tren', 'oso', 'pelota'], 'tronesa') ).to.have.members(["tren", "oso"])

@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { adjustLights } from '../../adventjs/2023.9.solve.js'
 
-describe('adventjs/2023.9 unit-test', () => {
+describe('adventjs/2023.09 unit-test', () => {
     describe('adjustLights()', () => {
         it('case 1', () => {
             expect( adjustLights(['🟢', '🔴', '🟢', '🟢', '🟢']) ).to.eq(1)

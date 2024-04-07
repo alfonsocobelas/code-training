@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { maxDistance } from '../../adventjs/2023.6.solve.js'
 
-describe('adventjs/2023.6 unit-test', () => {
+describe('adventjs/2023.06 unit-test', () => {
     describe('maxDistance()', () => {
         it('case 1', () => {
             const movements = '>>*<'

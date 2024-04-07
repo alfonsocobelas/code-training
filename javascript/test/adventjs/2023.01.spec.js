@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { firstRepeatedId } from '../../adventjs/2023.1.solve.js'
 
-describe('adventjs/2023.1 unit-test', () => {
+describe('adventjs/2023.01 unit-test', () => {
     describe('firstRepeatedId()', () => {
         it('case 1', () => {
             expect( firstRepeatedId([2, 1, 3, 5, 3, 2]) ).to.eq(3)
