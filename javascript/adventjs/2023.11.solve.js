@@ -1,9 +1,9 @@
-export function getIndexsForPalindrome(text) {
-    if (_isPalindrome(text)) {
+export function getIndexsForPalindrome(word) {
+    if (_isPalindrome(word)) {
         return []
     }
 
-    const { isPalindrome, indexes } = _canBeFormedPalindrome(text)
+    const { isPalindrome, indexes } = _canBeFormedPalindrome(word)
     if (isPalindrome) {
         return indexes
     }
@@ -11,27 +11,27 @@ export function getIndexsForPalindrome(text) {
     return null
 }
 
-function _isPalindrome(text) {
-    const reverse = [...text].reverse().join('')
+function _isPalindrome(word) {
+    const reverse = [...word].reverse().join('')
 
-    if (reverse === text) {
+    if (reverse === word) {
         return true
     }
 
     return false
 }
 
-function _canBeFormedPalindrome(text) {
-    const characters = [...text]
+function _canBeFormedPalindrome(word) {
+    const characters = [...word]
     let isPalindrome = false
     let indexes = []
 
     for (let i = 0; i < characters.length; i++) {
         for (let j = 1; j < characters.length; j++) {
             const clone = [...characters]
-            const swapText = _swapPosition({ array: clone, i, j })
+            const swapWord = _swapPosition({ array: clone, i, j })
             
-            if(_isPalindrome(swapText)) {
+            if(_isPalindrome(swapWord)) {
                 isPalindrome = true
                 indexes = [i, j]
                 break

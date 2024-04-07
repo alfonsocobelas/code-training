@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { adjustLights } from '../../adventjs/2023.9.solve.js'
+import { adjustLights } from '../../adventjs/2023.09.solve.js'
 
 describe('adventjs/2023.09 unit-test', () => {
     describe('adjustLights()', () => {

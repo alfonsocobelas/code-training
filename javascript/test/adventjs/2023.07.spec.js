@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { drawGift } from '../../adventjs/2023.7.solve.js'
+import { drawGift } from '../../adventjs/2023.07.solve.js'
 
 describe('adventjs/2023.07 unit-test', () => {
     describe('drawGift()', () => {

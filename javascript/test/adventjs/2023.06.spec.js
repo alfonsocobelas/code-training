@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { maxDistance } from '../../adventjs/2023.6.solve.js'
+import { maxDistance } from '../../adventjs/2023.06.solve.js'
 
 describe('adventjs/2023.06 unit-test', () => {
     describe('maxDistance()', () => {

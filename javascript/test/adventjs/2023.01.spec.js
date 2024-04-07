@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { firstRepeatedId } from '../../adventjs/2023.1.solve.js'
+import { firstRepeatedId } from '../../adventjs/2023.01.solve.js'
 
 describe('adventjs/2023.01 unit-test', () => {
     describe('firstRepeatedId()', () => {

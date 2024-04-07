@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import { getIndexsForPalindrome } from '../../adventjs/2023.11.solve.js'
 
 describe('adventjs/2023.11 unit-test', () => {
-    describe.only('getIndexsForPalindrome()', () => {
+    describe('getIndexsForPalindrome()', () => {
         it('case 1', () => {
             expect( getIndexsForPalindrome('anna') ).to.have.members([])
         })

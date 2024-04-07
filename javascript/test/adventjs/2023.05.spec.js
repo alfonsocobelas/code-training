@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { cyberReindeer } from '../../adventjs/2023.5.solve.js'
+import { cyberReindeer } from '../../adventjs/2023.05.solve.js'
 
 describe('adventjs/2023.05 unit-test', () => {
     describe('cyberReindeer()', () => {

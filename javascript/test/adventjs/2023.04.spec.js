@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { decode } from '../../adventjs/2023.4.solve.js'
+import { decode } from '../../adventjs/2023.04.solve.js'
 
 describe('adventjs/2023.04 unit-test', () => {
     describe('decode()', () => {

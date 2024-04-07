@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { manufacture } from '../../adventjs/2023.2.solve.js'
+import { manufacture } from '../../adventjs/2023.02.solve.js'
 
 describe('adventjs/2023.02 unit-test', () => {
     describe('manufacture()', () => {

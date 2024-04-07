@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { findNaughtyStep } from '../../adventjs/2023.3.solve.js'
+import { findNaughtyStep } from '../../adventjs/2023.03.solve.js'
 
 describe('adventjs/2023.03 unit-test', () => {
     describe('findNaughtyStep()', () => {
