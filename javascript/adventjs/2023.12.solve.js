@@ -9,6 +9,7 @@ export function checkIsValidCopy(original, copy) {
     }
 
     let isValidCopy = true 
+    
     for (let i = 0; i < arrOriginal.length; i++) {
         const originalChar = arrOriginal[i]
         const copyChar = arrCopy[i]
