@@ -11,8 +11,8 @@ export function organizeGifts(gifts) {
     types.forEach(type => {
         const gitfsOfType = store[type]
 
-        const { rawBoxs, bags } = _calculateBags(gitfsOfType)
-        const { boxs, pallets } = _calculatePalletsAndBoxes({ rawBoxs })
+        const { restBoxs, bags } = _calculateBags(gitfsOfType)
+        const { boxs, pallets } = _calculatePalletsAndBoxes(restBoxs)
         
         packaging += _buildPackaging({ type, pallets, boxs, bags })
     })
@@ -39,16 +39,16 @@ function _separateGitfsByType(gifts) {
     }()
 }
 
-function _calculateBags(total) {
-    const bags = total % RULES.BOX
-    const rawBoxs = (total - bags) / RULES.BOX
+function _calculateBags(gifts) {
+    const bags = gifts % RULES.BOX
+    const rawBoxs = (gifts - bags) / RULES.BOX
 
-    return { rawBoxs, bags }
+    return { restBoxs, bags }
 }
 
-function _calculatePalletsAndBoxes({ rawBoxs }) {
-    const boxs = rawBoxs % RULES.PALLET
-    const pallets = Math.floor(rawBoxs / RULES.PALLET) 
+function _calculatePalletsAndBoxes(restBoxs) {
+    const boxs = restBoxs % RULES.PALLET
+    const pallets = Math.floor(restBoxs / RULES.PALLET) 
 
     return { boxs, pallets }
 }
