@@ -1,7 +1,7 @@
 import { expect } from 'chai'
-import { isAnagram } from '../../../retosdeprogramacion/ejercicios/2022.1.solve.js'
+import { isAnagram } from '../../../retosdeprogramacion/ejercicios/2022.01.solve.js'
 
-describe('retosdeprogramacion/ejercicios/2022.1 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.01 unit-test', () => {
     describe('isAnagram()', () => {
         it('case 1', () => {
             expect( isAnagram('raza', 'zara') ).to.eq(true)

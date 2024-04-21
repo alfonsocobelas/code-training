@@ -1,7 +1,7 @@
 import { expect } from 'chai'
-import { fizzBuzz } from '../../../retosdeprogramacion/ejercicios/2022.0.solve.js'
+import { fizzBuzz } from '../../../retosdeprogramacion/ejercicios/2022.00.solve.js'
 
-describe('retosdeprogramacion/ejercicios/2022.0 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.00 unit-test', () => {
     describe('fizzBuzz()', () => {
         const result = [
             "fizz", "buzz", "fizz", "fizz", "buzz", "fizz", "fizzbuzz", "fizz", 
