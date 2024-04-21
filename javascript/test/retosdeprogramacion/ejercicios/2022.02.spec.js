@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { fibonacci } from '../../../retosdeprogramacion/ejercicios/2022.02.solve.js'
 
-describe.only('retosdeprogramacion/ejercicios/2022.01 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.01 unit-test', () => {
     describe('fibonacci()', () => {
         it('case 1', () => {
             expect( fibonacci(3) ).to.have.members([0, 1, 1])
