@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { getPrimes, isPrime } from '../../../retosdeprogramacion/ejercicios/2022.03.solve.js'
 
-describe.only('retosdeprogramacion/ejercicios/2022.01 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.03 unit-test', () => {
     describe('isPrime()', () => {
         it('case 1', () => {
             expect( isPrime(1) ).to.eq(false)
