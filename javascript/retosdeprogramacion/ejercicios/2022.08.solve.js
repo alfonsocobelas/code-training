@@ -50,7 +50,6 @@ function _decoderNaturalText(text) {
     for (const char of [...text.toUpperCase()]) {
         if (char === BLANK_SPACE) {
             morseCode = morseCode.concat(DOBLE_BLANK_SPACE)
-
         } else {
             const code = NATURAL_DICT[char]
             morseCode = morseCode.concat(code, BLANK_SPACE)
