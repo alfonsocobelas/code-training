@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { countWords } from '../../../retosdeprogramacion/ejercicios/2022.07.solve.js'
 
-described('retosdeprogramacion/ejercicios/2022.07 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.07 unit-test', () => {
     describe('countWords()', () => {
         it('case 1', () => {
             const response = countWords('¡casa; sara!') 

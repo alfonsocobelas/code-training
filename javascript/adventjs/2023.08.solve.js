@@ -41,7 +41,7 @@ function _separateGitfsByType(gifts) {
 
 function _calculateBags(gifts) {
     const bags = gifts % RULES.BOX
-    const rawBoxs = (gifts - bags) / RULES.BOX
+    const restBoxs = (gifts - bags) / RULES.BOX
 
     return { restBoxs, bags }
 }
