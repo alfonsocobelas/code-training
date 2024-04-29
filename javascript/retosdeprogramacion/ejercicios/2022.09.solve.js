@@ -19,8 +19,11 @@ function _recursiveChecking(symbols) {
     }
 
     const closeIndex = _getDeepestCloseSymbolIndex(symbols)
-    const previousIndex = closeIndex - 1
+    if (!closeIndex) {
+        return false 
+    }
 
+    const previousIndex = closeIndex - 1
     const closeSymbol = symbols[closeIndex]
     const previousSymbol = symbols[previousIndex]
     
