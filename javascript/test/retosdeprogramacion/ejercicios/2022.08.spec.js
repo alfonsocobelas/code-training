@@ -14,8 +14,7 @@ describe('retosdeprogramacion/ejercicios/2022.08 unit-test', () => {
             const morse = '-.-. .... --- -.-. .- .--. .. -.-. .-.-.-   . ...   ..- -. .-   -- .- .-. -.-. .-   -.. .   -.-. . .-. . .- .-.. . ... ..--.. '
             const text = 'Chocapic. Es una marca de cereales?'
 
-            const t = translate(morse) 
-            expect(t ).to.eq(text)
+            expect( translate(morse) ).to.eq(text)
         })
     })
 })

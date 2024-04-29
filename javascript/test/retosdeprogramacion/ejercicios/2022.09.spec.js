@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { isBalancedExpresion } from '../../../retosdeprogramacion/ejercicios/2022.09.solve.js'
 
-describe.only('retosdeprogramacion/ejercicios/2022.09 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.09 unit-test', () => {
     describe('isBalancedExpresion()', () => {
         it('case 1', () => {
             const expr = '{ [ a * ( c + d ) ] - 5 }'
@@ -53,7 +53,7 @@ describe.only('retosdeprogramacion/ejercicios/2022.09 unit-test', () => {
             expect( isBalancedExpresion(expr) ).to.eq(true)
         })
 
-        it.only('case 11', () => {
+        it('case 11', () => {
             const expr = '(a'
             expect( isBalancedExpresion(expr) ).to.eq(false)
         })
