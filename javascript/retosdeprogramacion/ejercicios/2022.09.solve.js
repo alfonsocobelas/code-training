@@ -1,5 +1,6 @@
 const CLOSE_SYMBOLS = [ '}', ')', ']' ]
-const SYMBOLS = [ '{', '}','(', ')', '[',']' ]
+const OPEN_SYMBOLS  = [ '{', '(', '[' ]
+const SYMBOLS = [ ...CLOSE_SYMBOLS, ...OPEN_SYMBOLS ]
 const DICTIONARY = {
     '}': '{',
     ')': '(',
@@ -18,13 +19,13 @@ function _recursiveChecking(symbols) {
         return true
     }
 
-    const closeIndex = _getDeepestCloseSymbolIndex(symbols)
-    if (!closeIndex) {
+    const index = _getDeepestCloseSymbolIndex(symbols)
+    if (!index) {
         return false 
     }
 
-    const previousIndex = closeIndex - 1
-    const closeSymbol = symbols[closeIndex]
+    const previousIndex = index - 1
+    const closeSymbol = symbols[index]
     const previousSymbol = symbols[previousIndex]
     
     if (previousSymbol !== DICTIONARY[closeSymbol]) {
@@ -48,4 +49,3 @@ function _getDeepestCloseSymbolIndex(symbols) {
         }   
     }
 }
-
