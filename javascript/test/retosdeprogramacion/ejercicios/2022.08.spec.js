@@ -1,20 +1,22 @@
 import { expect } from 'chai'
-import { translate } from '../../../retosdeprogramacion/ejercicios/2022.08.solve.js'
+import { decimalToBinary } from '../../../retosdeprogramacion/ejercicios/2022.08.solve.js'
 
 describe('retosdeprogramacion/ejercicios/2022.08 unit-test', () => {
-    describe('translate()', () => {
+    describe('decimalToBinary()', () => {
         it('case 1', () => {
-            const text = 'Chocapic. Es una marca de cereales?'
-            const morse = '-.-. .... --- -.-. .- .--. .. -.-. .-.-.-   . ...   ..- -. .-   -- .- .-. -.-. .-   -.. .   -.-. . .-. . .- .-.. . ... ..--.. '
-
-            expect( translate(text) ).to.eq(morse)
+            expect( decimalToBinary(387) ).to.eq(110000011)
         })
     
         it('case 2', () => {
-            const morse = '-.-. .... --- -.-. .- .--. .. -.-. .-.-.-   . ...   ..- -. .-   -- .- .-. -.-. .-   -.. .   -.-. . .-. . .- .-.. . ... ..--.. '
-            const text = 'Chocapic. Es una marca de cereales?'
-
-            expect( translate(morse) ).to.eq(text)
+            expect( decimalToBinary(0) ).to.eq(0)
+        })
+    
+        it('case 3', () => {
+            expect( decimalToBinary(12) ).to.eq(1100)
+        })
+            
+        it('case 4', () => {
+            expect( decimalToBinary(6) ).to.eq(110)
         })
     })
 })
