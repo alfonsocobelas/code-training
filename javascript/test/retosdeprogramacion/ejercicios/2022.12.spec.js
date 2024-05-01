@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { isPalindrome } from '../../../retosdeprogramacion/ejercicios/2022.12.solve.js'
 
-describe('retosdeprogramacion/ejercicios/2022.03 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.12 unit-test', () => {
     describe('isPalindrome()', () => {
         it('case 1', () => {
             const text = 'Ana lleva al oso la avellana.'

@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { factorial } from '../../../retosdeprogramacion/ejercicios/2022.13.solve.js'
 
-describe('retosdeprogramacion/ejercicios/2022.08 unit-test', () => {
+describe('retosdeprogramacion/ejercicios/2022.13 unit-test', () => {
     describe('factorial()', () => {
         it('case 1', () => {
             expect( factorial(0) ).to.eq(1)
