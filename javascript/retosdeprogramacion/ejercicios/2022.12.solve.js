@@ -1,10 +1,11 @@
 const REMOVE_CHAR = ''
+const SEPARATOR = ''
 
 export function isPalindrome(text) {
     const characters = _normalice(text)
     const reverse = [...characters].reverse()
 
-    if (characters.join('') === reverse.join('')) {
+    if (characters.join(SEPARATOR) === reverse.join(SEPARATOR)) {
         return true
     }
 
@@ -12,13 +13,12 @@ export function isPalindrome(text) {
 }
 
 function _normalice(text) {
-    const re = /[\.,:;¿?¡!()]/g
+    const re = /[\.,:;¿?¡!()/\s]/g
 
     return text
         .toLowerCase()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, REMOVE_CHAR)
         .replace(re, REMOVE_CHAR)
-        .replaceAll(' ', REMOVE_CHAR)
-        .split('')
+        .split(SEPARATOR)
 }

@@ -1,3 +1,5 @@
+const SEPARATOR = ''
+
 export function isNarcissistic(number) {
     if (number < 0) {
         return false 
@@ -5,11 +7,8 @@ export function isNarcissistic(number) {
 
     const sum = number
         .toString()
-        .split('')
-        .reduce((acc, digit, i, number) => {
-            return acc + Math.pow(Number(digit), number.length)
-        }, 0)
-
+        .split(SEPARATOR)
+        .reduce((acc, digit, i, number) => acc + Math.pow(Number(digit), number.length), 0)
 
     return number === sum
 }
