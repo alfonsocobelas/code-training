@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { checkIsValidCopy } from '../../adventjs/2023.12.solve.js'
 
-describe('adventjs/2023.11 unit-test', () => {
+describe('adventjs/2023.12 unit-test', () => {
     describe('checkIsValidCopy()', () => {
         it('case 1', () => {
             const original = 'Santa Claus is coming'
