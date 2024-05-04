@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { transformTree } from '../../adventjs/2023.16.solve.js'
 
-describe.only('adventjs/2023.16 unit-test', () => {
+describe('adventjs/2023.16 unit-test', () => {
     describe('transformTree()', () => {
         it('case 1', () => {
             const tree = [3, 1, 0, 8, 12, null, 1] 
