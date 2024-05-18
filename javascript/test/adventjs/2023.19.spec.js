@@ -19,7 +19,6 @@ describe.only('adventjs/2023.19 unit-test', () => {
             ]
               
             const reveal = revealSabotage(store)
-            console.log(reveal)
 
             for (let i = 0; i < expected.length; i++) {    
                 expect(reveal[i]).to.be.an('array').to.have.members(expected[i])

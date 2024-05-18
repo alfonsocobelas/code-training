@@ -1,3 +1,5 @@
+const SABOTAGE_GIFT = '*'
+
 export function revealSabotage(store) {
     const posSabotagedGifts = _getPositionOfSabotagedGifts(store)
 
@@ -21,7 +23,7 @@ export function revealSabotage(store) {
 
 
     function _isSabotageGift({ i, j }) {
-        return posSabotagedGifts.some(cell => JSON.stringify(cell) === JSON.stringify([i, j]) ) 
+        return store[i][j] === SABOTAGE_GIFT
     }
 
     function _calculateSabotageGiftsInAdjacentCells({ i, j }) {
